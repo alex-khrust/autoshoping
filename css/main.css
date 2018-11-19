@@ -796,11 +796,6 @@ table {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-flow: row;
-      -ms-flex-flow: row;
-          flex-flow: row;
   -webkit-box-pack: space-evenly;
   -webkit-justify-content: space-evenly;
       -ms-flex-pack: space-evenly;
@@ -812,8 +807,36 @@ table {
   border-bottom: 3px solid #1b1e35;
   margin-bottom: 12.5px; }
   .block__menu li {
+    width: 270px;
+    height: 100%;
     font: bold 20px "Montserrat";
     text-transform: uppercase; }
+    .block__menu li a {
+      width: 100%;
+      height: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      position: relative; }
+      .block__menu li a.active, .block__menu li a:hover {
+        color: #02c1bb; }
+        .block__menu li a.active:after, .block__menu li a:hover:after {
+          content: '';
+          position: absolute;
+          bottom: -3px;
+          width: 100%;
+          height: 3px;
+          background-color: #02c1bb;
+          z-index: 2; }
 
 .type {
   display: -webkit-box;
@@ -853,6 +876,26 @@ table {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
+    .type li a {
+      width: 100%;
+      height: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    .type li:hover {
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s;
+      background: #02c1bb; }
 
 .buttons {
   display: -webkit-box;
