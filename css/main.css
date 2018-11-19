@@ -719,15 +719,27 @@ table {
 
 .button--blue {
   background: #6a99f2; }
+  .button--blue:hover {
+    -webkit-box-shadow: 0 13px 43px 0 rgba(106, 153, 242, 0.56);
+            box-shadow: 0 13px 43px 0 rgba(106, 153, 242, 0.56); }
 
 .button--black {
   background: #222542; }
+  .button--black:hover {
+    -webkit-box-shadow: 0 13px 43px 0 rgba(34, 37, 66, 0.55);
+            box-shadow: 0 13px 43px 0 rgba(34, 37, 66, 0.55); }
 
 .button--orange {
   background: #f79284; }
+  .button--orange:hover {
+    -webkit-box-shadow: 0 13px 43px 0 rgba(247, 146, 132, 0.56);
+            box-shadow: 0 13px 43px 0 rgba(247, 146, 132, 0.56); }
 
 .button--green {
   background: #02c1bb; }
+  .button--green:hover {
+    -webkit-box-shadow: 0 13px 43px 0 rgba(2, 193, 187, 0.55);
+            box-shadow: 0 13px 43px 0 rgba(2, 193, 187, 0.55); }
 
 .profiles {
   width: 100%;
@@ -783,11 +795,13 @@ table {
             flex-flow: column; }
 
 .block {
-  width: 1170px;
-  height: 639px;
+  width: 100%;
+  height: auto;
   -webkit-border-radius: 20px;
           border-radius: 20px;
-  background-color: #222542; }
+  background-color: #222542;
+  position: relative;
+  padding-bottom: 78px; }
 
 .block__menu {
   width: 100%;
@@ -873,14 +887,6 @@ table {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
     margin: 13px; }
     .type li a {
       width: 100%;
@@ -899,11 +905,16 @@ table {
               align-items: center;
       -webkit-border-radius: 30px;
               border-radius: 30px;
-      background-color: #323557; }
+      background-color: #323557;
+      padding: 45px 20px; }
       .type li a:hover, .type li a.active {
         background: #02c1bb; }
+        .type li a:hover svg, .type li a.active svg {
+          fill: #fff !important; }
 
 .buttons {
+  width: 100%;
+  height: auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -915,4 +926,7 @@ table {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  margin-bottom: 30px;
+  position: absolute;
+  bottom: 0; }
