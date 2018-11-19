@@ -1,0 +1,136 @@
+.dashboard
+  width: 100%
+  height: 100%
+  display: flex
+  flex-flow: column
+
+.current-tasks
+  width: 100%
+  height: 100%
+  display: flex
+  flex-flow: column
+  padding-bottom: 140px
+
+.section
+  &__header
+    width: 100%
+    height: 100%
+    display: flex
+    margin-bottom: 20px
+    background: none !important
+  &__title
+    font: bold 30px "Montserrat"
+    line-height: 1.2
+  &__menu
+    display: flex
+    align-items: center
+    margin-left: 15px
+    li
+      margin-left: 15px
+
+table
+  width: 100%
+  border-collapse: collapse
+  overflow-y: auto
+  overflow-x: hidden
+  thead tr
+    height: 50px !important
+  tbody
+  tr
+    width: 100%
+    height: 58px
+    &:nth-of-type(2n+2)
+      border-radius: 20px
+      overflow: hidden
+      background-color: rgb(61, 65, 108)
+  th
+    height: 50px
+    font: 17px "Montserrat-Medium"
+    border-right: 1px solid rgb(61, 65, 108)
+    background-color: rgb(34, 37, 66)
+    &:last-child
+      border-right: none
+  td
+    text-align: center
+    font: 15px "Montserrat-Regular"
+
+  td, th
+    &:first-child
+      border-top-left-radius: 20px
+      border-bottom-left-radius: 20px
+    &:last-child
+      border-top-right-radius: 20px
+      border-bottom-right-radius: 20px
+
+.action-menu
+  width: 200px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin: 0 auto
+  a
+    width: 40px
+    height: 40px
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+  &--blue
+    background: #6a99f2
+  &--black
+    background: #222542
+  &--orange
+    background: #f79284
+  &--green
+    background: #02c1bb
+
+.dashboard
+  .id
+    width: 110px
+  //.store
+    //width: 140px
+  //.profile
+    //width: 151px
+  //.size
+    //width: 115px
+  //.product
+    //width: 235px
+  .log
+    width: 143px
+.action
+  width: 270px
+
+.log--blue
+  color: #2e93f1
+.log--green
+  color: #02c1bb
+
+.bar-buttons
+  width: inherit
+  max-width: 1170px
+  height: 89px
+  border-radius: 20px
+  background-color: rgb(34, 37, 66)
+  display: flex
+  align-items: center
+  justify-content: center
+  position: absolute
+  bottom: 65px
+.button
+  width: 196px
+  height: 48px
+  border-radius: 50px
+  display: flex
+  align-items: center
+  justify-content: center
+  font: 17px "Montserrat-Medium"
+  margin: 0 10px
+
+.button--blue
+  background: #6a99f2
+.button--black
+  background: #222542
+.button--orange
+  background: #f79284
+.button--green
+  background: #02c1bb
