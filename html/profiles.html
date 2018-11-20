@@ -54,8 +54,9 @@
             <li><a href=""><img src="../img/icons/dawnload.svg" alt=""></a></li>
           </ul>
         </header>
-        <table class="tab__profiles">
-          <thead>
+        <div class="tab_content tabl">
+          <table class="tab__profiles">
+            <thead>
             <tr>
               <th class="profileName">Profile name</th>
               <th class="name">Name</th>
@@ -63,8 +64,8 @@
               <th class="phone">Phone no.</th>
               <th class="action">Action</th>
             </tr>
-          </thead>
-          <tbody>
+            </thead>
+            <tbody>
             <tr>
               <td class="profileName">Test</td>
               <td class="name">Alexander</td>
@@ -80,11 +81,88 @@
             <tr class="no-more">
               <td colspan="5">No more profiles to show</td>
             </tr>
-          </tbody>
-        </table>
+            </tbody>
+          </table>
+          <div class="bar-buttons">
+            <a id="btn-create_profile" rel="create_profile" class="button button--green" href="javascript:void(0)">Create new</a>
+          </div>
+        </div>
+        <div id="create_profile" class="block">
+          <ul class="block__menu">
+            <li><a rel="tab__billing" class="active" href="javascript:void(0)">Billing</a></li>
+            <li><a rel="tab__shipping" href="javascript:void(0)">Shipping</a></li>
+            <li><a rel="tab__payment" href="javascript:void(0)">Payment</a></li>
+          </ul>
+          <div class="tab_content" id="tab__billing">
+            <ul class="type">
+              <li><a href="javascript:void(0)"><img src="../img/type/Layer%206.png" alt="">
+              </a></li>
+              <li><a href="javascript:void(0)"><img src="../img/type/Layer%207.png" alt="">
+              </a></li>
+              <li><a class="active" href="javascript:void(0)"><img src="../img/type/Layer%208.png" alt="">
+              </a></li>
+              <li><a href="javascript:void(0)"><img src="../img/type/Layer%209.png" alt="">
+              </a></li>
+              <li><a href="javascript:void(0)"><img src="../img/type/Layer%2010.png" alt="">
+              </a></li>
+              <li><a href="javascript:void(0)"><img src="../img/type/Layer%2011.png" alt="">
+              </a></li>
+              <li><a href="javascript:void(0)"><img src="../img/type/Layer%2012.png" alt="">
+              </a></li>
+              <li><a href="javascript:void(0)"><img src="../img/type/Layer%2013.png" alt="">
+              </a></li>
+              <li><a href="javascript:void(0)"><img src="../img/type/Layer%2014.png" alt="">
+              </a></li>
+              <li><a href="javascript:void(0)"><img src="../img/type/Layer%2015.png" alt="">
+              </a></li>
+            </ul>
+            <div class="buttons">
+              <a id="btn-back_to_profiles" class="button button--orange" href="javascript:void(0)">Next step</a>
+              <a id="" class="button button--green" href="javascript:void(0)">Next step</a>
+            </div>
+          </div>
+          <div class="tab_content" id="tab__shipping">
+            <ul class="type">
         
-        <div class="bar-buttons">
-          <a class="button button--green" href="">Create new</a>
+              <li><a class="active" href="javascript:void(0)"><img src="../img/type/Layer%208.png" alt="">
+              </a></li>
+              <li><a href="javascript:void(0)"><img src="../img/type/Layer%209.png" alt="">
+              </a></li>
+              <li><a href="javascript:void(0)"><img src="../img/type/Layer%2010.png" alt="">
+              </a></li>
+              <li><a href="javascript:void(0)"><img src="../img/type/Layer%2011.png" alt="">
+              </a></li>
+              <li><a href="javascript:void(0)"><img src="../img/type/Layer%2012.png" alt="">
+              </a></li>
+              <li><a href="javascript:void(0)"><img src="../img/type/Layer%2013.png" alt="">
+              </a></li>
+              <li><a href="javascript:void(0)"><img src="../img/type/Layer%2014.png" alt="">
+              </a></li>
+              <li><a href="javascript:void(0)"><img src="../img/type/Layer%2015.png" alt="">
+              </a></li>
+            </ul>
+            <div class="buttons">
+              <a class="button button--green" href="javascript:void(0)">Next step</a>
+            </div>
+          </div>
+          <div class="tab_content" id="tab__payment">
+            <ul class="type">
+              <li><a href="javascript:void(0)"><img src="../img/type/Layer%206.png" alt="">
+              </a></li>
+              <li><a href="javascript:void(0)"><img src="../img/type/Layer%207.png" alt="">
+              </a></li>
+              <li><a class="active" href="javascript:void(0)"><img src="../img/type/Layer%208.png" alt="">
+              </a></li>
+        
+              <li><a href="javascript:void(0)"><img src="../img/type/Layer%2014.png" alt="">
+              </a></li>
+              <li><a href="javascript:void(0)"><img src="../img/type/Layer%2015.png" alt="">
+              </a></li>
+            </ul>
+            <div class="buttons">
+              <a class="button button--green" href="javascript:void(0)">Next step</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>

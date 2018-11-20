@@ -80,31 +80,50 @@
             </a></li>
           </ul>
           <div class="buttons">
-            <a class="button button--green" href="javascript:void(0)">Next step</a>
+            <a id="btn-type" rel="tab__specification" class="button button--green" href="javascript:void(0)">Next step</a>
           </div>
         </div>
         <div class="tab_content" id="tab__specification">
-          <ul class="type">
-           
-            <li><a class="active" href="javascript:void(0)"><img src="../img/type/Layer%208.png" alt="">
-            </a></li>
-            <li><a href="javascript:void(0)"><img src="../img/type/Layer%209.png" alt="">
-            </a></li>
-            <li><a href="javascript:void(0)"><img src="../img/type/Layer%2010.png" alt="">
-            </a></li>
-            <li><a href="javascript:void(0)"><img src="../img/type/Layer%2011.png" alt="">
-            </a></li>
-            <li><a href="javascript:void(0)"><img src="../img/type/Layer%2012.png" alt="">
-            </a></li>
-            <li><a href="javascript:void(0)"><img src="../img/type/Layer%2013.png" alt="">
-            </a></li>
-            <li><a href="javascript:void(0)"><img src="../img/type/Layer%2014.png" alt="">
-            </a></li>
-            <li><a href="javascript:void(0)"><img src="../img/type/Layer%2015.png" alt="">
-            </a></li>
-          </ul>
+          <form action="#" autocomplete="on" method="post">
+            
+            <div class="form__elements-wrap mode_site-name">
+              <label class="form__title" >Mode
+                <select name="mode" id="mode" size="1">
+                  <option disabled selected>URL</option>
+                  <option value="1">example.com</option>
+                  <option value="2">example2.com</option>
+                </select>
+              </label>
+              
+              <label class="form__title" >Site Name
+                <select name="site-name" id="site-name" size="1">
+                  <option disabled selected>Select Site</option>
+                  <option value="1">example.com</option>
+                  <option value="2">example2.com</option>
+                </select>
+              </label>
+            </div>
+            
+            <div class="form__elements-wrap mail-password">
+              <label class="form__title" >E-mail
+                <input type="text" id="" disabled placeholder="alexsander.tkachuk18@gmail.com">
+              </label>
+              <label class="form__title" >Password
+                <input type="text" id="" disabled placeholder="Checkout Proxy">
+              </label>
+            </div>
+            
+            <div class="form__elements-wrap mail-password">
+              <label class="form__title" >Monitor Input
+                <input type="text" id="" placeholder="Keywords/URL/Vartqnt">
+              </label>
+              <label class="form__title" >Checkout Proxy
+                <input type="text" id="" placeholder="Checkout Proxy">
+              </label>
+            </div>
+          </form>
           <div class="buttons">
-            <a class="button button--green" href="javascript:void(0)">Next step</a>
+            <a rel="tab__finalize" class="button button--green" href="javascript:void(0)">Next step</a>
           </div>
         </div>
         <div class="tab_content" id="tab__finalize">
