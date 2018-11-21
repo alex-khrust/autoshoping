@@ -43,9 +43,71 @@
       <!--</div>-->
     </div>
   </header>
+
+  <section class="settings">
+    <div class="container">
+      <header class="section__header">
+        <h2 class="section__title">Settings</h2>
+      </header>
+      <div class="block">
+        <div class="tab_content" id="tab__specification">
+          <form action="#" autocomplete="on" method="post">
+          
+            <div class="form__elements-wrap hook">
+              <label class="form__title" >Slack Hook
+                <input type="url" placeholder="https://mail.google.com/mail/u/0/#inbox">
+              </label>
+              <label class="form__title" >Discord Hook
+                <input type="url" placeholder="https://mail.google.com/mail/u/0/#inbox">
+              </label>
+            </div>
   
+            <div class="form__elements-wrap api-delay">
+              <label class="form__title" >DiSlove API Key
+                <input type="text" placeholder="SAFJPADASDGHPIADF">
+              </label>
+    
+              <div class="form__elements-wrap--inner">
+                <label class="form__title" >Error Delay (MS)
+                  <input type="text" placeholder="145">
+                </label>
+                <label class="form__title" >Monitor Delay (MS)
+                  <input type="text" placeholder="4254">
+                </label>
+              </div>
+            </div>
+          
+            <div class="form__checkbox-wrap settings-checkbox">
+              <input id="Slack" type="checkbox" checked>
+              <label for="Slack" class="form__checkbox-title" >Slack</label>
   
+              <input id="Disolve" type="checkbox">
+              <label for="Disolve" class="form__checkbox-title" >Disolve</label>
   
+              <input id="AutoClick" type="checkbox">
+              <label for="AutoClick" class="form__checkbox-title" >Auto Click</label>
+  
+              <input id="Discord" type="checkbox" checked>
+              <label for="Discord" class="form__checkbox-title" >Discord</label>
+  
+              <input id="SmartMonitor" type="checkbox">
+              <label for="SmartMonitor" class="form__checkbox-title" >Smart Monitor</label>
+  
+              <input id="ProxiesPayPal" type="checkbox">
+              <label for="ProxiesPayPal" class="form__checkbox-title" >Enable Proxies with PayPal</label>
+          
+            </div>
+          </form>
+          
+          <div class="buttons">
+            <a rel="tab__finalize" class="button button--green" href="javascript:void(0)">Save</a>
+            <a rel="tab__finalize" class="button button--orange" href="javascript:void(0)">Reset</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <footer>
     <div class="copyright">
       <p>Copyright © avtoshopping 2018</p>
