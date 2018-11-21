@@ -94,30 +94,64 @@
             <li><a rel="tab__payment" href="javascript:void(0)">Payment</a></li>
           </ul>
           <div class="tab_content" id="tab__billing">
-            <ul class="type">
-              <li><a href="javascript:void(0)"><img src="../img/type/Layer%206.png" alt="">
-              </a></li>
-              <li><a href="javascript:void(0)"><img src="../img/type/Layer%207.png" alt="">
-              </a></li>
-              <li><a class="active" href="javascript:void(0)"><img src="../img/type/Layer%208.png" alt="">
-              </a></li>
-              <li><a href="javascript:void(0)"><img src="../img/type/Layer%209.png" alt="">
-              </a></li>
-              <li><a href="javascript:void(0)"><img src="../img/type/Layer%2010.png" alt="">
-              </a></li>
-              <li><a href="javascript:void(0)"><img src="../img/type/Layer%2011.png" alt="">
-              </a></li>
-              <li><a href="javascript:void(0)"><img src="../img/type/Layer%2012.png" alt="">
-              </a></li>
-              <li><a href="javascript:void(0)"><img src="../img/type/Layer%2013.png" alt="">
-              </a></li>
-              <li><a href="javascript:void(0)"><img src="../img/type/Layer%2014.png" alt="">
-              </a></li>
-              <li><a href="javascript:void(0)"><img src="../img/type/Layer%2015.png" alt="">
-              </a></li>
-            </ul>
+            <form action="#" autocomplete="on" method="post">
+    
+              <div class="form__elements-wrap mode_site-name">
+                <div class="select-box">
+                  <label for="mode" class="form__title" >Mode</label>
+                  <div class="select-mod-wrap">
+                    <select name="mode" id="mode" size="1">
+                      <option disabled selected>URL</option>
+                      <option value="1">example.com</option>
+                      <option value="2">example2.com</option>
+                    </select>
+                  </div>
+                </div>
+      
+                <div class="select-box">
+                  <label for="site-name" class="form__title" >Site Name</label>
+                  <div class="select-mod-wrap">
+                    <select name="site-name" id="site-name" size="1">
+                      <option disabled selected>Select Site</option>
+                      <option value="1">example.com</option>
+                      <option value="2">example2.com</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="form__elements-wrap mail-password">
+                <label class="form__title" >E-mail
+                  <input type="text"  disabled placeholder="alexsander.tkachuk18@gmail.com">
+                </label>
+                <label class="form__title" >Password
+                  <input type="text" disabled placeholder="Checkout Proxy">
+                </label>
+              </div>
+    
+              <div class="form__elements-wrap mail-password">
+                <label class="form__title" >Monitor Input
+                  <input type="text" placeholder="Keywords/URL/Vartqnt">
+                </label>
+                <label class="form__title" >Checkout Proxy
+                  <input type="text" placeholder="Checkout Proxy">
+                </label>
+              </div>
+    
+              <div class="form__checkbox-wrap specification-checkbox">
+                <input id="Account" type="checkbox" checked>
+                <label for="Account" class="form__checkbox-title" >Account</label>
+      
+                <input id="AdvancedMode" type="checkbox">
+                <label for="AdvancedMode" class="form__checkbox-title" >Advanced Mode</label>
+      
+                <input id="Captcha" type="checkbox">
+                <label for="Captcha" class="form__checkbox-title" >Captcha</label>
+    
+              </div>
+            </form>
             <div class="buttons">
-              <a id="btn-back_to_profiles" class="button button--orange" href="javascript:void(0)">Next step</a>
+              <a id="btn-back_to_profiles" class="button button--blue" href="javascript:void(0)">Back to profiles</a>
               <a id="" class="button button--green" href="javascript:void(0)">Next step</a>
             </div>
           </div>
