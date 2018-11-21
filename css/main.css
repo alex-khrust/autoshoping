@@ -716,6 +716,7 @@ form {
   .form__elements-wrap--inner {
     width: 100%;
     height: 100%;
+    max-width: 500px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -724,8 +725,7 @@ form {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-    .form__elements-wrap--inner input, .form__elements-wrap--inner select, .form__elements-wrap--inner .select-mod-wrap {
-      width: 100%;
+    .form__elements-wrap--inner input, .form__elements-wrap--inner select, .form__elements-wrap--inner label, .form__elements-wrap--inner .select-box {
       max-width: 235px; }
 
 .form__title {
@@ -733,7 +733,7 @@ form {
   color: white;
   margin-top: 20px; }
 
-input, select, .select-mod-wrap {
+input, select {
   width: 100%;
   max-width: 500px;
   height: 45px;
@@ -750,16 +750,20 @@ input, select, .select-mod-wrap {
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s; }
-  input:hover, input:active, input:focus, select:hover, select:active, select:focus, .select-mod-wrap:hover, .select-mod-wrap:active, .select-mod-wrap:focus {
+  input:hover, input:active, input:focus, select:hover, select:active, select:focus {
     border: 1px solid #02c1bb;
     -webkit-box-shadow: 0 11px 21px 0 rgba(2, 193, 187, 0.13);
             box-shadow: 0 11px 21px 0 rgba(2, 193, 187, 0.13); }
+
+label, .form__checkbox-title, .select-box {
+  max-width: 500px; }
 
 .select-mod-wrap {
   width: 100%;
   height: 100%;
   position: relative;
   overflow: hidden;
+  margin: 10px 0 0;
   padding: 0; }
   .select-mod-wrap:after {
     content: '';
