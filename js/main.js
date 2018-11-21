@@ -48,7 +48,7 @@ $(document).ready(function ()  {
     $("#" + activeTab).fadeIn();
   });
   
-  $("#btn-back_to_profiles").click(function () {
+  $(".btn-back_to_profiles").click(function () {
     $("#create_profile").hide();
     $(".tabl").show();
     var btnPprof = $(".buttons a").attr("rel");
