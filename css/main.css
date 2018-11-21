@@ -512,8 +512,7 @@ section {
   -webkit-box-direction: normal;
   -webkit-flex-flow: column;
       -ms-flex-flow: column;
-          flex-flow: column;
-  position: relative; }
+          flex-flow: column; }
   section .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
