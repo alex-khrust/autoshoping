@@ -185,8 +185,8 @@ section {
 .button--blue {
   background: #6a99f2; }
   .button--blue:hover {
-    -webkit-box-shadow: 0 13px 43px 0 rgba(106, 153, 242, 0.56);
-            box-shadow: 0 13px 43px 0 rgba(106, 153, 242, 0.56); }
+    -webkit-box-shadow: 0 13px 43px 0 rgba(106, 153, 242, 0.55);
+            box-shadow: 0 13px 43px 0 rgba(106, 153, 242, 0.55); }
 
 .button--black {
   background: #222542; }
@@ -197,14 +197,26 @@ section {
 .button--orange {
   background: #f79284; }
   .button--orange:hover {
-    -webkit-box-shadow: 0 13px 43px 0 rgba(247, 146, 132, 0.56);
-            box-shadow: 0 13px 43px 0 rgba(247, 146, 132, 0.56); }
+    -webkit-box-shadow: 0 13px 43px 0 rgba(247, 146, 132, 0.55);
+            box-shadow: 0 13px 43px 0 rgba(247, 146, 132, 0.55); }
 
 .button--green {
   background: #02c1bb; }
   .button--green:hover {
     -webkit-box-shadow: 0 13px 43px 0 rgba(2, 193, 187, 0.55);
             box-shadow: 0 13px 43px 0 rgba(2, 193, 187, 0.55); }
+
+.button--purple {
+  background: #c06af2; }
+  .button--purple:hover {
+    -webkit-box-shadow: 0 13px 43px 0 rgba(192, 106, 242, 0.55);
+            box-shadow: 0 13px 43px 0 rgba(192, 106, 242, 0.55); }
+
+.button--yellow {
+  background: #f2b76a; }
+  .button--yellow:hover {
+    -webkit-box-shadow: 0 13px 43px 0 rgba(242, 183, 106, 0.55);
+            box-shadow: 0 13px 43px 0 rgba(242, 183, 106, 0.55); }
 
 header {
   width: 100%;
@@ -562,6 +574,11 @@ section {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
   position: relative;
   padding-bottom: 78px; }
 
@@ -857,9 +874,6 @@ input {
             border-radius: 5px;
     background: url(../img/icons/done.svg) no-repeat center center #323557; }
 
-.profiles .tab_content {
-  position: initial; }
-
 .tab-profiles {
   width: 100%;
   height: 100%;
@@ -888,4 +902,22 @@ input {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  margin-bottom: 0; }
+
+.buttons-settings {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 45px 0 135px 0; }
