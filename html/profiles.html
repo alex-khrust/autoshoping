@@ -95,60 +95,74 @@
           </ul>
           <div class="tab_content" id="tab__billing">
             <form action="#" autocomplete="on" method="post">
-    
-              <div class="form__elements-wrap mode_site-name">
-                <div class="select-box">
-                  <label for="mode" class="form__title" >Mode</label>
-                  <div class="select-mod-wrap">
-                    <select name="mode" id="mode" size="1">
-                      <option disabled selected>URL</option>
-                      <option value="1">example.com</option>
-                      <option value="2">example2.com</option>
-                    </select>
-                  </div>
-                </div>
-      
-                <div class="select-box">
-                  <label for="site-name" class="form__title" >Site Name</label>
-                  <div class="select-mod-wrap">
-                    <select name="site-name" id="site-name" size="1">
-                      <option disabled selected>Select Site</option>
-                      <option value="1">example.com</option>
-                      <option value="2">example2.com</option>
-                    </select>
-                  </div>
+  
+              <div class="form__elements-wrap prof-name">
+                <label class="form__title" >Profile Name
+                  <input type="text" placeholder="Test">
+                </label>
+                
+                <div class="form__elements-wrap--inner">
+                  <label class="form__title" >First Name
+                    <input type="text">
+                  </label>
+                  <label class="form__title" >Last Name
+                    <input type="text">
+                  </label>
                 </div>
               </div>
-    
-              <div class="form__elements-wrap mail-password">
-                <label class="form__title" >E-mail
-                  <input type="text"  disabled placeholder="alexsander.tkachuk18@gmail.com">
+  
+              <div class="form__elements-wrap address">
+                <label class="form__title" >Billing Address No.1
+                  <input type="text">
                 </label>
-                <label class="form__title" >Password
-                  <input type="text" disabled placeholder="Checkout Proxy">
-                </label>
-              </div>
-    
-              <div class="form__elements-wrap mail-password">
-                <label class="form__title" >Monitor Input
-                  <input type="text" placeholder="Keywords/URL/Vartqnt">
-                </label>
-                <label class="form__title" >Checkout Proxy
-                  <input type="text" placeholder="Checkout Proxy">
+                <label class="form__title" >Billing Address No.2
+                  <input type="text">
                 </label>
               </div>
-    
-              <div class="form__checkbox-wrap specification-checkbox">
-                <input id="Account" type="checkbox" checked>
-                <label for="Account" class="form__checkbox-title" >Account</label>
-      
-                <input id="AdvancedMode" type="checkbox">
-                <label for="AdvancedMode" class="form__checkbox-title" >Advanced Mode</label>
-      
-                <input id="Captcha" type="checkbox">
-                <label for="Captcha" class="form__checkbox-title" >Captcha</label>
-    
+  
+              <div class="form__elements-wrap city_zip">
+                <div class="form__elements-wrap--inner">
+                  <label class="form__title" >City
+                    <input type="text">
+                  </label>
+                  <label class="form__title" >Zip Code
+                    <input type="text">
+                  </label>
+                </div>
+                
+                <div class="form__elements-wrap--inner">
+                  <div class="select-box">
+                    <label for="Country" class="form__title" >Country</label>
+                    <div class="select-mod-wrap">
+                      <select name="mode" id="Country" size="1">
+                        <option disabled selected>United States</option>
+                        <option value="1">United Kingdom</option>
+                        <option value="2">Canada</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="select-box">
+                    <label for="State" class="form__title" >State</label>
+                    <div class="select-mod-wrap">
+                      <select name="site-name" id="State" size="1">
+                        <option disabled selected>New York</option>
+                        <option value="1">Alabama</option>
+                        <option value="2">California</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
               </div>
+  
+              <div class="form__elements-wrap order-contacts">
+                <label class="form__title" >Phone Number
+                  <input type="tel">
+                </label>
+                <label class="form__title" >Order Email
+                  <input type="email">
+                </label>
+              </div>
+              
             </form>
             <div class="buttons">
               <a id="btn-back_to_profiles" class="button button--blue" href="javascript:void(0)">Back to profiles</a>
