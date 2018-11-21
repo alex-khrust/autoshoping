@@ -113,6 +113,12 @@ form
     width: 100%
     height: 100%
 
+.select-box
+  width: 100%
+  height: 100%
+  display: flex
+  flex-flow: column
+
 .form
   &__elements-wrap
     width: 100%
@@ -127,7 +133,7 @@ form
 
 
 
-input, select
+input, select, .select-mod-wrap
   width: 100%
   max-width: 501px
   height: 45px
@@ -139,6 +145,7 @@ input, select
   outline: none
   padding: 0 22px
   margin-top: 10px
+  position: relative
   transition: .3s
   &:hover,
   &:active,
@@ -146,10 +153,43 @@ input, select
     border: 1px solid rgb(2, 193, 187)
     box-shadow: 0 11px 21px 0 rgba(2, 193, 187, 0.13)
 
-
-option
-  &:disabled
-    color: rgb(105, 109, 153)
+.select-mod-wrap
+  width: 100%
+  height: 100%
+  position: relative
+  overflow: hidden
+  padding: 0
+  &:after
+    content: ''
+    position: absolute
+    right: 0
+    top: 0
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 45px
+    height: 45px
+    border-radius: 10px
+    background: url("../img/icons/arrow-select.svg") no-repeat center center rgb(2, 193, 187)
+    z-index: 5
+  select
+    appearance: none
+    background: transparent
+    border: transparent
+    margin: 0
+    padding-right: 67px
+    &:hover,
+    &:active,
+    &:focus
+      border: none
+      box-shadow: none
+  option
+    color: #ffffff
+    &:checked
+      color: #ffffff
+      background-color: rgb(27, 29, 53)
+    &:disabled
+      color: rgb(105, 109, 153)
 
 input
   color: #ffffff

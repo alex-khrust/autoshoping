@@ -960,6 +960,19 @@ form {
     width: 100%;
     height: 100%; }
 
+.select-box {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column; }
+
 .form__elements-wrap {
   width: 100%;
   height: 100%;
@@ -978,7 +991,7 @@ form {
   color: white;
   margin-top: 20px; }
 
-input, select {
+input, select, .select-mod-wrap {
   width: 100%;
   max-width: 501px;
   height: 45px;
@@ -991,16 +1004,63 @@ input, select {
   outline: none;
   padding: 0 22px;
   margin-top: 10px;
+  position: relative;
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s; }
-  input:hover, input:active, input:focus, select:hover, select:active, select:focus {
+  input:hover, input:active, input:focus, select:hover, select:active, select:focus, .select-mod-wrap:hover, .select-mod-wrap:active, .select-mod-wrap:focus {
     border: 1px solid #02c1bb;
     -webkit-box-shadow: 0 11px 21px 0 rgba(2, 193, 187, 0.13);
             box-shadow: 0 11px 21px 0 rgba(2, 193, 187, 0.13); }
 
-option:disabled {
-  color: #696d99; }
+.select-mod-wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: 0; }
+  .select-mod-wrap:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 45px;
+    height: 45px;
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
+    background: url("../img/icons/arrow-select.svg") no-repeat center center #02c1bb;
+    z-index: 5; }
+  .select-mod-wrap select {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background: transparent;
+    border: transparent;
+    margin: 0;
+    padding-right: 67px; }
+    .select-mod-wrap select:hover, .select-mod-wrap select:active, .select-mod-wrap select:focus {
+      border: none;
+      -webkit-box-shadow: none;
+              box-shadow: none; }
+  .select-mod-wrap option {
+    color: #ffffff; }
+    .select-mod-wrap option:checked {
+      color: #ffffff;
+      background-color: #1b1d35; }
+    .select-mod-wrap option:disabled {
+      color: #696d99; }
 
 input {
   color: #ffffff; }
