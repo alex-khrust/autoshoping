@@ -19,38 +19,53 @@
     width: 100%
     height: 100%
     max-width: 500px
-    min-height: 402px
     border-collapse: collapse
-    border-radius: 10px
-    background: #02c1bb
-    th
-      border-right: 1px solid #222542 !important
-      background-color: #323557 !important
-      &:first-child
-        border-top-left-radius: 10px
-        border-bottom-left-radius: 0
-      &:last-child
-        border-top-right-radius: 10px
-        border-bottom-right-radius: 0
     tr
       height: 48px
       background: none
       border-radius: 0
-      border-collapse: collapse
-      //&:first-child td
-      //  border-top-left-radius: 10px
-      //  border-top-right-radius: 10px
-      //&:last-child td
-      //  border-bottom-right-radius: 10px
-      //  border-bottom-left-radius: 10px
-    //td
-    //  border-collapse: collapse
-    tbody
-      background: #02c1bb
-
     .proxy
       width: 370px
 
+
+  .wrap-tab__proxy
+    width: 100%
+    height: 100%
+    min-height: 402px
+    max-width: 500px
+    display: flex
+    flex-flow: column
+    border-radius: 10px
+    background: #02c1bb
+  .thead
+    width: 100%
+    height: 50px
+    border-radius: 10px
+    display: flex
+    align-items: center
+    background-color: #323557 !important
+    margin-bottom: 12px
+    text-align: center
+    h6
+      font: 17px "Montserrat-Medium"
+    .proxy
+      width: 100%
+      max-width: 370px
+      border-right: 1px solid #222542 !important
+    .speed
+      width: 100%
+      max-width: 130px
+
+
+  .select-proxies
+    width: 165px
+    display: flex
+    align-self: flex-end
+    position: absolute
+    bottom: 43px
+    right: 0
+    .select-mod-wrap
+      margin-top: 0
 
   .buttons-proxy
     max-width: 830px

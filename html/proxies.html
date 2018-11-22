@@ -58,18 +58,13 @@
             <div class="monitor-proxies">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore error expedita, minus nesciunt nobis, odit quam recusandae repellendus sunt tempora tempore ullam vero voluptatibus. Ab beatae cum eveniet iusto magnam neque, numquam perferendis placeat porro, quas repellendus suscipit ut voluptate! Accusamus ea error, id ipsum iste quasi! Mollitia, odit vero!
             </div>
-            <table class="tab__proxy">
-              <thead>
-                <tr>
-                  <th class="proxy">PROXY</th>
-                  <th class="speed">SPEED</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="proxy">q23r5kj1mb3v5v1k5v1k451vk2h45v1kh245</td>
-                  <td class="speed">Timed Out</td>
-                </tr>
+            <div class="wrap-tab__proxy">
+              <div class="thead">
+                <h6 class="proxy">PROXY</h6>
+                <h6 class="speed">SPEED</h6>
+              </div>
+              <table class="tab__proxy">
+                <tbody>
                 <tr>
                   <td class="proxy">q23r5kj1mb3v5v1k5v1k451vk2h45v1kh245</td>
                   <td class="speed">Timed Out</td>
@@ -82,11 +77,27 @@
                   <td class="proxy">q23r5kj1mb3v5v1k5v1k451vk2h45v1kh245</td>
                   <td class="speed">Timed Out</td>
                 </tr>
-              </tbody>
-            </table>
-
+                <tr>
+                  <td class="proxy">q23r5kj1mb3v5v1k5v1k451vk2h45v1kh245</td>
+                  <td class="speed">Timed Out</td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
-        
+    
+          <div class="select-proxies">
+            <div class="select-box">
+              <div class="select-mod-wrap">
+                <select name="mode" id="select-proxies" size="1">
+                  <option disabled selected>DSM US</option>
+                  <option value="1">DSM UK</option>
+                  <option value="2">DSM UA</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          
           <div class="buttons buttons-proxy">
             <a rel="tab__save" class="button button--green" href="javascript:void(0)">Save</a>
             <a rel="tab__test" class="button button--orange" href="javascript:void(0)">Test</a>

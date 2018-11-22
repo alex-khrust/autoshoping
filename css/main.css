@@ -919,34 +919,73 @@ input {
   width: 100%;
   height: 100%;
   max-width: 500px;
-  min-height: 402px;
-  border-collapse: collapse;
-  -webkit-border-radius: 10px;
-          border-radius: 10px;
-  background: #02c1bb; }
-  .proxies table th {
-    border-right: 1px solid #222542 !important;
-    background-color: #323557 !important; }
-    .proxies table th:first-child {
-      -webkit-border-top-left-radius: 10px;
-              border-top-left-radius: 10px;
-      -webkit-border-bottom-left-radius: 0;
-              border-bottom-left-radius: 0; }
-    .proxies table th:last-child {
-      -webkit-border-top-right-radius: 10px;
-              border-top-right-radius: 10px;
-      -webkit-border-bottom-right-radius: 0;
-              border-bottom-right-radius: 0; }
+  border-collapse: collapse; }
   .proxies table tr {
     height: 48px;
     background: none;
     -webkit-border-radius: 0;
-            border-radius: 0;
-    border-collapse: collapse; }
-  .proxies table tbody {
-    background: #02c1bb; }
+            border-radius: 0; }
   .proxies table .proxy {
     width: 370px; }
+
+.proxies .wrap-tab__proxy {
+  width: 100%;
+  height: 100%;
+  min-height: 402px;
+  max-width: 500px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  background: #02c1bb; }
+
+.proxies .thead {
+  width: 100%;
+  height: 50px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #323557 !important;
+  margin-bottom: 12px;
+  text-align: center; }
+  .proxies .thead h6 {
+    font: 17px "Montserrat-Medium"; }
+  .proxies .thead .proxy {
+    width: 100%;
+    max-width: 370px;
+    border-right: 1px solid #222542 !important; }
+  .proxies .thead .speed {
+    width: 100%;
+    max-width: 130px; }
+
+.proxies .select-proxies {
+  width: 165px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+  position: absolute;
+  bottom: 43px;
+  right: 0; }
+  .proxies .select-proxies .select-mod-wrap {
+    margin-top: 0; }
 
 .proxies .buttons-proxy {
   max-width: 830px;
