@@ -963,7 +963,9 @@ input {
   margin-bottom: 12px;
   text-align: center; }
   .proxies .thead h6 {
-    font: 17px "Montserrat-Medium"; }
+    height: 50px;
+    font: 17px "Montserrat-Medium";
+    line-height: 50px; }
   .proxies .thead .proxy {
     width: 100%;
     max-width: 370px;
