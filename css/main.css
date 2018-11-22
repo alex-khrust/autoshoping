@@ -181,6 +181,10 @@ section {
           justify-content: center;
   font: 17px "Montserrat-Medium";
   margin: 0 10px; }
+  .button:first-child {
+    margin-left: 0; }
+  .button:last-child {
+    margin-right: 0; }
 
 .button--blue {
   background: #6a99f2; }
@@ -908,43 +912,47 @@ input {
           border-radius: 10px;
   padding: 20px;
   -webkit-box-shadow: 0 13px 43px 0 rgba(2, 193, 187, 0.1);
-          box-shadow: 0 13px 43px 0 rgba(2, 193, 187, 0.1); }
+          box-shadow: 0 13px 43px 0 rgba(2, 193, 187, 0.1);
+  margin-bottom: 50px; }
 
 .proxies table {
   width: 100%;
   height: 100%;
   max-width: 500px;
-  min-height: 402px; }
+  min-height: 402px;
+  border-collapse: collapse;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  background: #02c1bb; }
   .proxies table th {
     border-right: 1px solid #222542 !important;
     background-color: #323557 !important; }
     .proxies table th:first-child {
       -webkit-border-top-left-radius: 10px;
               border-top-left-radius: 10px;
-      -webkit-border-bottom-left-radius: 10px;
-              border-bottom-left-radius: 10px; }
+      -webkit-border-bottom-left-radius: 0;
+              border-bottom-left-radius: 0; }
     .proxies table th:last-child {
       -webkit-border-top-right-radius: 10px;
               border-top-right-radius: 10px;
-      -webkit-border-bottom-right-radius: 10px;
-              border-bottom-right-radius: 10px; }
+      -webkit-border-bottom-right-radius: 0;
+              border-bottom-right-radius: 0; }
   .proxies table tr {
     height: 48px;
     background: none;
     -webkit-border-radius: 0;
-            border-radius: 0; }
-    .proxies table tr:first-child td {
-      -webkit-border-top-left-radius: 10px;
-              border-top-left-radius: 10px;
-      -webkit-border-top-right-radius: 10px;
-              border-top-right-radius: 10px; }
-    .proxies table tr:last-child td {
-      -webkit-border-bottom-right-radius: 10px;
-              border-bottom-right-radius: 10px;
-      -webkit-border-bottom-left-radius: 10px;
-              border-bottom-left-radius: 10px; }
+            border-radius: 0;
+    border-collapse: collapse; }
   .proxies table tbody {
     background: #02c1bb; }
+  .proxies table .proxy {
+    width: 370px; }
+
+.proxies .buttons-proxy {
+  max-width: 830px;
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start; }
 
 .settings-checkbox {
   display: -webkit-box;

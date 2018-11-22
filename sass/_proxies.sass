@@ -12,6 +12,7 @@
   border-radius: 10px
   padding: 20px
   box-shadow: 0 13px 43px 0 rgba(2, 193, 187, 0.1)
+  margin-bottom: 50px
 
 .proxies
   table
@@ -19,25 +20,38 @@
     height: 100%
     max-width: 500px
     min-height: 402px
+    border-collapse: collapse
+    border-radius: 10px
+    background: #02c1bb
     th
       border-right: 1px solid #222542 !important
       background-color: #323557 !important
       &:first-child
         border-top-left-radius: 10px
-        border-bottom-left-radius: 10px
+        border-bottom-left-radius: 0
       &:last-child
         border-top-right-radius: 10px
-        border-bottom-right-radius: 10px
+        border-bottom-right-radius: 0
     tr
       height: 48px
       background: none
       border-radius: 0
-      &:first-child td
-        border-top-left-radius: 10px
-        border-top-right-radius: 10px
-      &:last-child td
-        border-bottom-right-radius: 10px
-        border-bottom-left-radius: 10px
+      border-collapse: collapse
+      //&:first-child td
+      //  border-top-left-radius: 10px
+      //  border-top-right-radius: 10px
+      //&:last-child td
+      //  border-bottom-right-radius: 10px
+      //  border-bottom-left-radius: 10px
+    //td
+    //  border-collapse: collapse
     tbody
       background: #02c1bb
 
+    .proxy
+      width: 370px
+
+
+  .buttons-proxy
+    max-width: 830px
+    align-self: flex-start
