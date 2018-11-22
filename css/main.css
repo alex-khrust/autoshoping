@@ -722,7 +722,7 @@ form {
   color: white;
   margin-top: 20px; }
 
-input, select {
+input, select, .select-mod-wrap {
   width: 100%;
   max-width: 500px;
   height: 45px;
@@ -739,7 +739,7 @@ input, select {
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s; }
-  input:hover, input:active, input:focus, select:hover, select:active, select:focus {
+  input:hover, input:active, input:focus, select:hover, select:active, select:focus, .select-mod-wrap:hover, .select-mod-wrap:active, .select-mod-wrap:focus {
     border: 1px solid #02c1bb;
     -webkit-box-shadow: 0 11px 21px 0 rgba(2, 193, 187, 0.13);
             box-shadow: 0 11px 21px 0 rgba(2, 193, 187, 0.13); }
@@ -879,6 +879,10 @@ input {
     -webkit-border-radius: 5px;
             border-radius: 5px;
     background: url(../img/icons/done.svg) no-repeat center center #323557; }
+
+.profiles .tabl {
+  height: 100%;
+  position: initial !important; }
 
 .tab-profiles {
   width: 100%;
