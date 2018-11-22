@@ -174,11 +174,18 @@
           <div class="tab_content" id="tab__shipping">
             
             <form action="#" autocomplete="on" method="post">
-    
-              <div class="form__elements-wrap prof-name">
-                <label class="form__title" >Profile Name
-                  <input type="text" placeholder="Test">
-                </label>
+              <div class="form__elements-wrap billing-name">
+                <div class="radio-buttons-wrap">
+                  <h6 class="form__title">Same as Billing?</h6>
+                  <div class="label radio-buttons">
+                    <input id="radio-on" type="radio" name="prof-name" checked>
+                    <label for="radio-on" class="radio-btn">YES</label>
+  
+                    <input id="radio-off" type="radio" name="prof-name">
+                    <label for="radio-off" class="radio-btn" >NO</label>
+                  </div>
+                </div>
+                
       
                 <div class="form__elements-wrap--inner">
                   <label class="form__title" >First Name
@@ -241,7 +248,6 @@
                   <input type="email">
                 </label>
               </div>
-  
             </form>
             
             <div class="buttons">
