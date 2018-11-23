@@ -959,7 +959,8 @@ input {
     -o-transition: .3s;
     transition: .3s; }
     .radio-buttons label:hover {
-      border: 1px solid #02c1bb; }
+      border: 1px solid #02c1bb;
+      color: #ffffff; }
   .radio-buttons input[type=radio]:checked + label {
     color: #ffffff;
     background-color: #02c1bb;
